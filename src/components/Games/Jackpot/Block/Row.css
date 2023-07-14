@@ -1,0 +1,9 @@
+.jackpot-row {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 240px;
+    border-radius: 20px;
+    border: 6px solid #ffffff;
+}

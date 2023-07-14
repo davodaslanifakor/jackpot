@@ -1,0 +1,48 @@
+.element-button {
+    display: inline-block;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 14px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    min-width: 220px;
+    font-family: 'CARTOON FREE', sans-serif;
+}
+
+.element-button.primary {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.element-button.danger {
+    background-color: #FF5252;
+    color: #fff;
+}
+
+.element-button.warning {
+    background-color: #FF9800;
+    color: #fff;
+}
+
+.element-button.success {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.element-button.info {
+    background-color: #00BCD4;
+    color: #fff;
+}
+
+.element-button:hover {
+    opacity: 0.8;
+}
+.element-button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

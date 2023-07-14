@@ -1,0 +1,63 @@
+
+.jackpot-block-container {
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    perspective: 1000px;
+    padding: 20px 0;
+}
+
+.jackpot-block-carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-out;
+    transform-origin: center top;
+    transform: rotateX(0deg);
+}
+
+.jackpot-block-carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 60px;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.jackpot-block-carousel-item.a {
+    transform: rotateX(0deg) translateZ(60px);
+}
+.jackpot-block-carousel-item.b {
+    transform: rotateX(60deg) translateZ(60px);
+}
+.jackpot-block-carousel-item.c {
+    transform: rotateX(120deg) translateZ(60px);
+}
+.jackpot-block-carousel-item.d {
+    transform: rotateX(180deg) translateZ(60px);
+}
+.jackpot-block-carousel-item.e {
+    transform: rotateX(240deg) translateZ(60px);
+}
+
+.jackpot-block-carousel.spinning {
+    animation: carouselRotation 0.1s ease-in infinite;
+}
+
+@keyframes carouselRotation {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
