@@ -1,12 +1,11 @@
 # Jackpot Game
 
-![Demo Screen](screenshots/jackpot-demo.gif)
+## [Demo Site](https://musical-sawine-943d94.netlify.app)
 
 ## Description
 This is a web application that simulates a jackpot game.
 
 ## Table of Contents
-
 
 - [Installation](#installation)
    - [Docker](#docker)
